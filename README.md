@@ -1,0 +1,2 @@
+# gitFridaysShop
+# gitFridaysShop
