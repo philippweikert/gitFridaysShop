@@ -18,5 +18,9 @@ public class Order {
         return id;
     }
 
+    @Override
+    public String toString(){
+        return "Order[ID: " + id + ", Product: " + products + "]";
+    }
 }
 

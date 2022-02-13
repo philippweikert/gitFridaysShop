@@ -11,7 +11,22 @@ public class ProductRepo {
         products = new ArrayList<>();
     }
 
-    public List<Product> getProducts() {
+    public ProductRepo (List<Product> products){
+        this.products = products;
+
+    }
+
+    public Product get(int id){
+        for (Product product: products)
+        { if(product.getId() == id) {
+            return product;
+        }
+
+        }
+        return null;
+    }
+
+    public List<Product> list(){
         return products;
     }
 }

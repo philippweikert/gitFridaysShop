@@ -4,15 +4,13 @@ import java.util.HashMap;
 
 public class OrderRepo {
 
-    private HashMap<String,Order> orders;
+    private HashMap<Integer ,Order> orders;
 
     public OrderRepo(){
         orders = new HashMap<>();
     }
 
-
-
-    public HashMap<String, Order> getOrders() {
+    public HashMap<Integer, Order> getOrders() {
         return orders;
     }
 }
