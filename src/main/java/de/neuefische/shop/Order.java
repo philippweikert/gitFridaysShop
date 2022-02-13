@@ -1,26 +1,23 @@
 package de.neuefische.shop;
 
+import java.util.HashMap;
+import java.util.Objects;
+
 public class Order {
 
-    private String products;
-    private int id;
+    private HashMap<String,Product> products;
+    private Integer id;
 
-    public Order(String products, int id) {
+    public Order (HashMap<String, Product> products){
         this.products = products;
-        this.id = id;
     }
 
-    public String getProducts() {
-        return products;
-    }
-
-    public int getId() {
+    public Integer getId(){
         return id;
     }
 
-    @Override
-    public String toString(){
-        return "Order[ID: " + id + ", Product: " + products + "]";
+    public HashMap<String, Product> getProducts(){
+        return products;
     }
 }
 

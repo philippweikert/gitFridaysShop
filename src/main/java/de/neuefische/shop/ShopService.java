@@ -1,6 +1,8 @@
 package de.neuefische.shop;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
 public class ShopService {
@@ -22,15 +24,15 @@ public class ShopService {
         return myProducts.list();
     }
 
-    public void addOrder(Order order){
-        myOrders.add(order);
+    public void addOrder(Order orders){
+        myOrders.add(orders);
     }
 
-    public Order getOrder(int id){
-        return myOrders.get(id);
+    public OrderRepo getOrder(Integer id){
+        return myOrders;
     }
 
-    public List<Order> listOrders(){
+    public Collection<Order> listOrders(){
         return myOrders.list();
     }
     }
